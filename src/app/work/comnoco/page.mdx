@@ -1,0 +1,59 @@
+import logo from '@/images/clients/comnoco/logomark.png'
+import imageHero from './hero.png'
+import imageStuartMalt from './stuart-malt.jpeg'
+
+export const caseStudy = {
+  client: 'Comnoco',
+  title: 'Free your no-code Logic',
+  description:
+    'Imagine creating your own APIs, running scheduled processes, handling webhooks, writing no-code functions, and seamlessly integrating with Supabase without any code.',
+  summary: [
+    'Imagine creating your own APIs, running scheduled processes, handling webhooks, writing no-code functions, and seamlessly integrating with Supabase without any code. ',
+    'Revolutionize your backend development with Comnoco - the no-code platform for creating and connecting APIs. Works with Supabase or any other database .',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-06',
+  service: 'App development, Microservices, DevOps',
+  testimonial: {
+    author: { name: 'Stuart Malt', role: 'Founder of Comnoco' },
+    content:
+      'Working with HTByte was a game-changer for us at Comnoco. Their expertise in designing a microservices architecture and automating our deployment process revolutionized our backend development. Thanks to their solutions, we have transformed from struggling with a monolithic backend to seamlessly operating a no-code platform, empowering our users like never before. Highly recommended!.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Noticing incredibly complex backend development, the team at Comnoco came to the conclusion that, instead of having a monolithic backend, they needed to improve their backend development process. They wanted to create a no-code platform that would allow users to create and connect APIs without writing any code.
+
+Previously they were using a monolithic backend that was difficult to maintain and scale. They wanted to follow Microservices architecture to make their backend more modular and scalable. They also wanted to automate their deployment process to reduce downtime and increase development productivity.
+
+To achieve this, we design a microservices architecture to make their backend more modular and scalable. We automated their deployment process to reduce downtime and increase development productivity.
+
+## What we did
+
+<TagList>
+  <TagListItem>Microservices</TagListItem>
+  <TagListItem>DevOps</TagListItem>
+  <TagListItem>Web Development</TagListItem>
+  <TagListItem>Backend</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Stuart Malt', role: 'Founder of Comnoco' }}
+  image={{ src: imageStuartMalt }}
+>
+  Working with HTByte was a game-changer for us at Comnoco. Their expertise in designing a microservices architecture and automating our deployment process revolutionized our backend development. Thanks to their solutions, we have transformed from struggling with a monolithic backend to seamlessly operating a no-code platform, empowering our users like never before. Highly recommended!
+</Blockquote>
+
+<StatList>
+  <StatListItem value="50%" label="Development Productivity" />
+  <StatListItem value="5x" label="Faster Development" />
+  <StatListItem value="60%" label="Reduction in Downtime" />
+  <StatListItem value="40%" label="Customer Satisfaction " />
+</StatList>

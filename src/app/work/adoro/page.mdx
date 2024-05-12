@@ -1,0 +1,61 @@
+import logo from '@/images/clients/adoro/logomark.ico'
+import imageHero from './hero.png'
+import imageNoahKaresh from './noah-karesh.jpeg'
+
+export const caseStudy = {
+  client: 'Adoro.us',
+  title: 'Intelligent Paid Search Marketing Automation Platform',
+  description:
+    'Adoro helps companies save time and make more money using an intelligent ad management process that automates keyword research & analysis, campaign creation, and ongoing ad monitoring & optimization.',
+  summary: [
+    'Adoro helps companies save time and make more money using an intelligent ad management process that automates keyword research & analysis, campaign creation, and ongoing ad monitoring & optimization.',
+    'Supercharge keyword research efficiency, effectiveness, and accuracy.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'AI, Keyword Generator, Automation',
+  testimonial: {
+    author: { name: 'Noah Karesh', role: 'CEO of Adoro.us' },
+    content:
+      'Thanks to HTByte, our AI-powered keyword generator has transformed our ad management, saving time and increasing revenue. Their innovative integration and expertise have been invaluable to our success.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Having more than 100 active ads agency Adoro.us approached us to looking to build their own AI powered automated keyword generator.
+
+New keyword generator will help them to save time and make more money using an intelligent ad management process that automates keyword research & analysis, campaign creation, and ongoing ad monitoring & optimization.
+
+We built a custom crawler that would scrape the client's website for the latest products and trends and then feed them into the OpenAI API and Google keyword planner API via an algorithm. The algorithm would then generate a list of keywords that we would use to create ads for our clients.
+
+To optimise their feed quality score we used an innovative technique. We integrated the keyword generator with the client's website, sopify and google sheets and used the data from those sources to generate keywords. This allowed us to generate keywords that were more relevant to the client's website and therefore more likely to be clicked on.
+
+## What we did
+
+<TagList>
+  <TagListItem>Automated Keyword Generator</TagListItem>
+  <TagListItem>Custom Crawler</TagListItem>
+  <TagListItem>OpenAI API</TagListItem>
+  <TagListItem>Infrastructure</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Noah Karesh', role: 'CEO of Adoro.us' }}
+  image={{ src: imageNoahKaresh }}
+>
+  Thanks to HTByte, our AI-powered keyword generator has transformed our ad management, saving time and increasing revenue. Their innovative integration and expertise have been invaluable to our success.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="80%" label="Fast on keyword generation" />
+  <StatListItem value="10x" label="Quality keyword" />
+  <StatListItem value="35%" label="Less infra costs" />
+  <StatListItem value="40%" label="More impression" />
+</StatList>
