@@ -1,29 +1,29 @@
-import { useId } from "react";
-import clsx from "clsx";
+import { useId } from 'react'
+import clsx from 'clsx'
 
 export function Logomark({
   invert = false,
   filled = false,
   ...props
-}: React.ComponentPropsWithoutRef<"svg"> & {
-  invert?: boolean;
-  filled?: boolean;
+}: React.ComponentPropsWithoutRef<'svg'> & {
+  invert?: boolean
+  filled?: boolean
 }) {
-  let id = useId();
+  let id = useId()
 
   return (
     <svg viewBox="0 0 32 32" aria-hidden="true" {...props}>
       <rect
         clipPath={`url(#${id}-clip)`}
         className={clsx(
-          "h-8 transition-all duration-300",
-          invert ? "fill-white" : "fill-neutral-950",
-          filled ? "w-8" : "w-0 group-hover/logo:w-8"
+          'h-8 transition-all duration-300',
+          invert ? 'fill-white' : 'fill-neutral-950',
+          filled ? 'w-8' : 'w-0 group-hover/logo:w-8',
         )}
       />
       <use
         href={`#${id}-path`}
-        className={invert ? "stroke-white" : "stroke-neutral-950"}
+        className={invert ? 'stroke-white' : 'stroke-neutral-950'}
         fill="none"
         strokeWidth="1.5"
       />
@@ -42,7 +42,7 @@ export function Logomark({
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
 export function Logo({
@@ -51,16 +51,16 @@ export function Logo({
   filled = false,
   fillOnHover = false,
   ...props
-}: React.ComponentPropsWithoutRef<"svg"> & {
-  invert?: boolean;
-  filled?: boolean;
-  fillOnHover?: boolean;
+}: React.ComponentPropsWithoutRef<'svg'> & {
+  invert?: boolean
+  filled?: boolean
+  fillOnHover?: boolean
 }) {
   return (
     <svg
-      viewBox="0 0 130 32"
+      viewBox="0 0 140 32"
       aria-hidden="true"
-      className={clsx(fillOnHover && "group/logo", className)}
+      className={clsx(fillOnHover && 'group/logo', className)}
       {...props}
     >
       <Logomark
@@ -69,13 +69,14 @@ export function Logo({
         filled={filled}
       />
       <path
-        className={invert ? "fill-white" : "fill-neutral-950"}
-        d="M65.27,20.15v1.72c0,3.04-2.29,5.03-5.85,5.03h-6.24V5.83h5.92c3.56,0,5.85,1.99,5.85,5.03v1.11c0,1.9-.88,3.25-2.5,4.03,1.8.72,2.82,2.14,2.82,4.15ZM56.92,8.84v5.72h1.66c1.8,0,2.64-.72,2.64-2.26v-1.5c0-1.23-.85-1.96-2.29-1.96h-2.01ZM61.53,19.82c0-1.54-.85-2.26-2.64-2.26h-1.97v6.32h2.33c1.45,0,2.29-.72,2.29-1.96v-2.11Z
-M80.54,5.83l-5.01,12.25v8.82h-3.74v-8.82l-5.01-12.25h3.98l2.89,8.04,2.96-8.04h3.91Z
-M82.09,5.83h11.92v3.01h-4.09v18.06h-3.74V8.84h-4.09v-3.01Z
-M37.71,5.83h11.92v3.01h-4.09v18.06h-3.74V8.84h-4.09v-3.01Z
-M96.89,5.83h10.61v3.01h-6.87v5.87h5.46v3.01h-5.46v6.17h6.87v3.01h-10.61V5.83Z"
+        className={invert ? 'fill-white' : 'fill-neutral-950'}
+        d="M38,28.06V3.46h4.36v10.37h5.19V3.46h4.36v24.6h-4.36v-10.72h-5.19v10.72h-4.36Z
+          M55.29,3.46h13.91v3.51h-4.77v21.09h-4.36V6.97h-4.77v-3.51Z
+          M86.69,20.18v2c0,3.55-2.68,5.87-6.83,5.87h-7.29V3.46h6.91c4.16,0,6.83,2.32,6.83,5.87v1.3c0,2.21-1.03,3.8-2.92,4.71,2.1.84,3.29,2.5,3.29,4.85ZM76.94,6.97v6.68h1.93c2.1,0,3.09-.84,3.09-2.64v-1.76c0-1.44-.99-2.28-2.68-2.28h-2.35ZM82.33,19.8c0-1.79-.99-2.64-3.09-2.64h-2.31v7.38h2.72c1.69,0,2.68-.84,2.68-2.29v-2.46Z
+          M104.51,3.46l-5.84,14.3v10.3h-4.36v-10.3l-5.84-14.3h4.65l3.37,9.38,3.46-9.38h4.57Z
+          M106.33,3.46h13.91v3.51h-4.77v21.09h-4.36V6.97h-4.77v-3.51Z
+          M123.61,3.46h12.39v3.51h-8.03v6.85h6.38v3.51h-6.38v7.21h8.03v3.51h-12.39V3.46Z"
       />
     </svg>
-  );
+  )
 }
