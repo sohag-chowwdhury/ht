@@ -38,6 +38,17 @@ export interface Article {
   }
 }
 
+export interface Job {
+  date: string
+  title: string
+  description: string
+  author: {
+    name: string
+    role: string
+    image: ImagePropsWithOptionalAlt
+  }
+}
+
 export interface CaseStudy {
   date: string
   client: string
@@ -54,6 +65,10 @@ export interface CaseStudy {
     }
     content: string
   }
+}
+
+export function loadJobs() {
+  return loadEntries<Job>('career', 'job')
 }
 
 export function loadArticles() {
