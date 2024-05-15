@@ -1,0 +1,61 @@
+import logo from '@/images/clients/apukuski/logo.png'
+import imageHero from './hero.png'
+import imageArttuHilli from './arthu.jpg'
+
+export const caseStudy = {
+  client: 'tilaus.apukuski.com ',
+  title: 'Efficient Local Transport and Moving Service',
+  description:
+    'Apukuski provides efficient local transportation, moving, and goods pickup services. Their staff and local partner companies ensure fast, friendly, and quality service with a 100% reservation guarantee.',
+  summary: [
+    'Apukuski offers efficient local transportation, moving, and goods pickup services.',
+    'Their staff and local partners ensure fast, friendly, and high-quality service with a 100% reservation guarantee.',
+  ],
+  logo: logo, // Assuming 'logo' is defined elsewhere
+  image: { src: imageHero },
+  date: '2021-05',
+  service: 'Local Transport, Moving, Goods Pickup',
+
+testimonial: {
+author: { name: 'Arttu Hilli', role: 'CEO of Apukuski' },
+content:
+"Apukuski's team helped streamline our local transportation needs. Their service is reliable, and their commitment to quality is unmatched. We highly recommend them!",
+},
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+When Apukuski, a local transport and moving service provider, sought to enhance their operations, they turned to us for assistance in optimizing their local transportation and goods pickup services.
+
+Apukuski's goal was to provide fast, friendly, and high-quality service to their customers while ensuring a seamless reservation process. We collaborated closely with them to streamline their operations and enhance their customer experience.
+
+To achieve this, we implemented custom solutions to optimize their reservation system, ensuring a smooth and efficient booking process. Additionally, we leveraged advanced analytics to enhance route planning and optimize resource allocation, resulting in faster response times and improved service quality.
+
+## What we did
+
+<TagList>
+  <TagListItem>Optimized Reservation System</TagListItem>
+  <TagListItem>Advanced Route Planning</TagListItem>
+  <TagListItem>Customer Experience Enhancement</TagListItem>
+  <TagListItem>Resource Allocation Optimization</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Arttu Hilli', role: 'CEO of Apukuski' }}
+  image={{ src: imageArttuHilli }}
+>
+  Htbyte's team helped streamline our local transportation needs. Their service
+  is reliable, and their commitment to quality is unmatched. We highly recommend
+  them!
+</Blockquote>
+
+<StatList>
+  <StatListItem value="100%" label="Reservation Guarantee" />
+  <StatListItem value="30%" label="Faster Response Time" />
+  <StatListItem value="25%" label="Enhanced Customer Experience" />
+</StatList>
