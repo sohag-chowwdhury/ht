@@ -9,9 +9,9 @@ const navigation = [
   {
     title: 'Work',
     links: [
-      { title: 'Adoro', href: '/work/adoro' },
-      { title: 'Comnoco', href: '/work/comnoco' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Adoro', href: '/work/adoro'},
+      { title: 'Comnoco', href: '/work/comnoco'},
+      { title: 'Apukuski', href: '/work/apukuski'},
       {
         title: (
           <>
