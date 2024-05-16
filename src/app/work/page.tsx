@@ -10,14 +10,14 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
 import logoAdoro from '@/images/clients/adoro/logo.webp'
 import logoComnoco from '@/images/clients/comnoco/logo.svg'
+import logoQproco from '@/images/clients/qproco/logo-dark.svg'
+import logoApukuski from '@/images/clients/apukuski/logo-dark.png'
+import logoKronologic from '@/images/clients/kronologic/logo.png'
+import logoFino from '@/images/clients/fino/logo.svg'
+import logoDexecure from '@/images/clients/dexecure/logo.svg'
+import logoFunnelflux from '@/images/clients/funnelflux/logo.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
@@ -99,12 +99,12 @@ function CaseStudies({
 const clients = [
   ['Adoro', logoAdoro],
   ['Comnoco', logoComnoco],
-  ['Family Fund', logoFamilyFund],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Qproco', logoQproco],
+  ['Apukuski', logoApukuski],
+  ['Kronologic', logoKronologic],
+  ['Fino', logoFino],
+  ['Dexecure', logoDexecure],
+  ['Funnelflux', logoFunnelflux],
 ]
 
 function Clients() {

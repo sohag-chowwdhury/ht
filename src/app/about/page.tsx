@@ -14,13 +14,13 @@ import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
 import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
 import imageBlakeReid from '@/images/team/blake-reid.jpg'
 import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
-import imageDriesVincent from '@/images/team/dries-vincent.jpg'
 import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
 import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
 import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
 import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
-import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpg'
+import imageSohagChowdhury from '@/images/team/sohag-chowdhury.jpg'
+import imageTanvirRahman from '@/images/team/tanvir-rahman.jpg'
+import imageIshtiaqueAhmed from '@/images/team/ishtiaque-ahmed.jpeg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
 import { loadArticles } from '@/lib/mdx'
 
@@ -29,7 +29,7 @@ function Culture() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        title="Where Passion Meets Performance."
         invert
       >
         <p>
@@ -38,17 +38,17 @@ function Culture() {
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Innovation" invert>
+            Encourage experimentation, collaboration, and learning to foster a
+            constantly evolving environment.
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="People-Centric Approach" invert>
+            Prioritize employee well-being, growth, and recognition to build a
+            dedicated and motivated team.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Agile Mindset" invert>
+            Embrace flexibility, adaptation, and continuous improvement to
+            navigate the fast-paced world of software development.
           </GridListItem>
         </GridList>
       </Container>
@@ -61,19 +61,14 @@ const team = [
     title: 'Leadership',
     people: [
       {
-        name: 'Leslie Alexander',
+        name: 'Tanvir Rahman',
         role: 'Co-Founder / CEO',
-        image: { src: imageLeslieAlexander },
+        image: { src: imageTanvirRahman },
       },
       {
-        name: 'Michael Foster',
+        name: 'Sohag Chowdhury',
         role: 'Co-Founder / CTO',
-        image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
+        image: { src: imageSohagChowdhury },
       },
     ],
   },
@@ -81,12 +76,12 @@ const team = [
     title: 'Team',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
+        name: 'Ishtiaque Ahmed',
+        role: 'SEO Consultant',
+        image: { src: imageIshtiaqueAhmed },
       },
       {
-        name: 'Emma Dorsey',
+        name: 'Amir Hamza',
         role: 'Senior Designer',
         image: { src: imageEmmaDorsey },
       },
@@ -180,8 +175,7 @@ function Team() {
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+  description: 'Building Success Through Client-Centric Solutions.',
 }
 
 export default async function About() {
@@ -189,31 +183,33 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
-        <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
-        </p>
+      <PageIntro eyebrow="About us" title="Driven by Client Success">
+        <p>Building Success Through Client-Centric Solutions.</p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            At HTByte, our journey began with a simple yet profound belief: that
+            the key to success in the software industry lies in our clients'
+            satisfaction. We set out to create a company where innovative
+            solutions meet unparalleled client service.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Over the years, we have grown from a small startup into a thriving
+            software firm. Our portfolio boasts a diverse array of projects,
+            each a testament to our ability to adapt, innovate, and succeed.
+            Whether it's developing a custom application, enhancing an existing
+            system, or providing ongoing support, we approach every project with
+            the same level of dedication and enthusiasm.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem
+            value="10+"
+            label="Dedicated team of skilled experts."
+          />
+          <StatListItem value="50+" label="Satisfied clients" />
+          <StatListItem value="$500k" label="Invoices billed" />
         </StatList>
       </Container>
 
