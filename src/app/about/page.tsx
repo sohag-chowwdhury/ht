@@ -10,18 +10,17 @@ import { PageIntro } from '@/components/PageIntro'
 import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
-import imageAngelaFisher from '@/images/team/angela-fisher.jpg'
-import imageBenjaminRussel from '@/images/team/benjamin-russel.jpg'
-import imageBlakeReid from '@/images/team/blake-reid.jpg'
-import imageChelseaHagon from '@/images/team/chelsea-hagon.jpg'
-import imageEmmaDorsey from '@/images/team/emma-dorsey.jpg'
-import imageJeffreyWebb from '@/images/team/jeffrey-webb.jpg'
-import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
-import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
+import imageNayemHossain from '@/images/team/nayem-hossain.jpeg'
+import imageMushfiqurRahman from '@/images/team/mushfiqur-rahman.png'
+import imageWakibHasan from '@/images/team/wakib-hasan.jpeg'
+import imageShabrulIslam from '@/images/team/shabrul-islam.png'
+import imageAmirHamza from '@/images/team/amir-hamza.jpeg'
+import imageEmonAhmed from '@/images/team/emon-ahmed.png'
+import imageSagorPaul from '@/images/team/sagor-paul.png'
 import imageSohagChowdhury from '@/images/team/sohag-chowdhury.jpg'
 import imageTanvirRahman from '@/images/team/tanvir-rahman.jpg'
 import imageIshtiaqueAhmed from '@/images/team/ishtiaque-ahmed.jpeg'
-import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
+import imageBidhanDas from '@/images/team/bidhan-dash.png'
 import { loadArticles } from '@/lib/mdx'
 
 function Culture() {
@@ -81,44 +80,44 @@ const team = [
         image: { src: imageIshtiaqueAhmed },
       },
       {
+        name: 'Nayem Hossain',
+        role: 'Performance Marketing Specialist',
+        image: { src: imageNayemHossain },
+      },
+      {
         name: 'Amir Hamza',
         role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
+        image: { src: imageAmirHamza },
       },
       {
-        name: 'Leonard Krasner',
+        name: 'Mushfiqur Rahman',
+        role: 'Product Manager',
+        image: { src: imageMushfiqurRahman },
+      },
+      {
+        name: 'Wakib Hasan',
         role: 'VP, User Experience',
-        image: { src: imageLeonardKrasner },
+        image: { src: imageWakibHasan },
       },
       {
-        name: 'Blake Reid',
-        role: 'Junior Copywriter',
-        image: { src: imageBlakeReid },
+        name: 'Shabrul Islam',
+        role: 'Project Manager',
+        image: { src: imageShabrulIslam },
       },
       {
-        name: 'Kathryn Murphy',
+        name: 'Emon Ahmed',
         role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
+        image: { src: imageEmonAhmed },
       },
       {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
-        name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
-        image: { src: imageJeffreyWebb },
-      },
-      {
-        name: 'Benjamin Russel',
+        name: 'Sagor Paul',
         role: 'Senior Developer',
-        image: { src: imageBenjaminRussel },
+        image: { src: imageSagorPaul },
       },
       {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
+        name: 'Bidhan Das',
+        role: 'Software Quality Assurance (SQA) Engineer',
+        image: { src: imageBidhanDas },
       },
     ],
   },
