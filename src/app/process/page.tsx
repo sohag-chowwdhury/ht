@@ -58,24 +58,36 @@ function Discover() {
     <Section title="Discover" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{' '}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          At HTByte, we immerse ourselves in your business to uncover its core
+          strengths and challenges. By collaborating closely with your team, we
+          identify opportunities for innovation and improvement in areas such as{' '}
+          <strong className="font-semibold text-neutral-950">
+            web development, AI tools, and SaaS platforms
+          </strong>{' '}
+          . Our goal is to understand your unique{' '}
+          <strong className="font-semibold text-neutral-950">
+            needs and tailor
+          </strong>{' '}
+          our solutions to drive your business forward.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{' '}
-          <strong className="font-semibold text-neutral-950">business</strong>{' '}
-          accounts — handing that information over to our forensic accounting
-          team.
+          Our approach includes detailed consultations and assessments, where we
+          conduct extensive research to gather critical data about your
+          operations. Our team of{' '}
+          <strong className="font-semibold text-neutral-950">
+            experts analyzes
+          </strong>{' '}
+          this information to develop a strategic plan that aligns with your
+          business objectives.
         </p>
+
         <p>
-          Once the full audit is complete, we report back with a comprehensive{' '}
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          In this phase, we also focus on understanding your target audience and
+          market trends. This allows us to create solutions that resonate with
+          your customers and give you a competitive edge in{' '}
+          <strong className="font-semibold text-neutral-950">
+            digital marketing and SEO.
+          </strong>{' '}
         </p>
       </div>
 
@@ -83,12 +95,10 @@ function Discover() {
         Included in this phase
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>Detailed consultations</TagListItem>
+        <TagListItem>Competitive analysis</TagListItem>
+        <TagListItem>Customer insights</TagListItem>
+        <TagListItem>Strategic planning</TagListItem>
       </TagList>
     </Section>
   )
@@ -99,33 +109,36 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
+          With a clear understanding of your business needs, HTByte creates a
+          tailored roadmap to guide the development process. Our team of skilled
+          developers and designers works diligently to transform ideas into
+          tangible products, ensuring each project meets the highest standards
+          of quality and performance.
         </p>
         <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
+          During the build phase, we maintain transparent communication,
+          providing regular updates on progress. We leverage the latest
+          technologies and methodologies, including AI tools, to ensure
+          efficient and effective development. Whether it’s a comprehensive web
+          development project or a sophisticated SaaS platform, we deliver
+          solutions that are both innovative and reliable.
         </p>
         <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          Our focus on collaboration ensures that your input is valued and
+          integrated at every stage. We strive to deliver solutions that not
+          only meet but exceed your expectations.
         </p>
       </div>
-
-      <Blockquote
-        author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
-        className="mt-12"
-      >
-        Studio were so regular with their progress updates we almost began to
-        think they were automated!
-      </Blockquote>
+      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+        Included in this phase
+      </h3>
+      <TagList className="mt-4">
+        <TagListItem>Customized development roadmap</TagListItem>
+        <TagListItem>Regular progress updates</TagListItem>
+        <TagListItem>Cutting-edge technology implementation</TagListItem>
+        <TagListItem>Quality assurance testing</TagListItem>
+        <TagListItem>Collaborative feedback loops</TagListItem>
+      </TagList>
     </Section>
   )
 }
@@ -135,31 +148,10 @@ function Deliver() {
     <Section title="Deliver" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{' '}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
-        </p>
-        <p>
-          Despite largely using pre-built components, most of the{' '}
-          <strong className="font-semibold text-neutral-950">progress</strong>{' '}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on social media.
-        </p>
-        <p>
-          We ensure that the main pages of the site are{' '}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{' '}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{' '}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{' '}
-          retainer.
+          When it’s time to deliver, HTByte ensures your project is ready to
+          shine. We make certain every detail is perfect before launch, so your
+          transition is smooth and successful. Our delivery phase covers all
+          aspects, from deployment to ongoing support.
         </p>
       </div>
 
@@ -168,16 +160,22 @@ function Deliver() {
       </h3>
       <List className="mt-8">
         <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+          Our projects boast 100% test coverage, ensuring every feature works
+          flawlessly. Though our tests are as thorough as they can be, we still
+          strive for continuous improvement.
         </ListItem>
         <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+          For maximum reliability, HTByte uses top-tier Digital Ocean droplets,
+          providing robust performance at an affordable price. This ensures your
+          platform runs smoothly and efficiently, whether it’s a web development
+          project or a SaaS platform.
         </ListItem>
         <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+          TByte holds the keys to all essential services your business relies
+          on. You can count on us for lifetime support, and of course, the
+          occasional invoice. Our dedicated team is always ready to assist,
+          ensuring your operations never miss a beat, whether you need help with
+          digital marketing strategies or SEO optimizations.
         </ListItem>
       </List>
     </Section>
@@ -199,7 +197,7 @@ function Values() {
         title="Balancing reliability and innovation"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
+          At HTByte, we strive to stay at the forefront of emerging trends and
           technologies, while completely ignoring them and forking that old
           Rails project we feel comfortable using. We stand by our core values
           to justify that decision.
@@ -209,9 +207,9 @@ function Values() {
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+            The first step in any partnership is ensuring your logo looks
+            perfect in our pre-designed template. The second step is matching
+            the colors just right.
           </GridListItem>
           <GridListItem title="Efficient">
             We pride ourselves on never missing a deadline which is easy because
@@ -251,8 +249,8 @@ export default function Process() {
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
           We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          best value to our clients. Our mission is to guide your digital
+          transformation, ensuring success and innovation every step of the way.
         </p>
       </PageIntro>
 

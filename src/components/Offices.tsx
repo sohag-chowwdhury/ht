@@ -33,8 +33,9 @@ export function Offices({
     <ul role="list" {...props}>
       <li>
         <Office name="Dhaka" invert={invert}>
-          Rupayan Prime
-          <br />Green Rd, Dhaka 1205
+          Basundhara R/A Block:E,
+          <br />
+          Road: 18/C , House:321/C
         </Office>
       </li>
     </ul>

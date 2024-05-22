@@ -4,32 +4,43 @@ import Link from 'next/link'
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
+import { Border } from '@/components/Border'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import logoAdoro from '@/images/clients/adoro/logo-light.webp'
+import logoComnoco from '@/images/clients/comnoco/logo-light.svg'
+import logoQproco from '@/images/clients/qproco/logo-dark.svg'
+import logoApukuski from '@/images/clients/apukuski/logo-dark.png'
+import logoKronologic from '@/images/clients/kronologic/logo-light.webp'
+import logoFino from '@/images/clients/fino/logo-light.svg'
+import logoDexecure from '@/images/clients/dexecure/logo-light.svg'
+import logoFunnelflux from '@/images/clients/funnelflux/logo-light.svg'
+import logoFiverr from '@/images/marketplaces/fiverr/logo.svg'
+import logoUpwork from '@/images/marketplaces/upwork/logo.svg'
+import logoBark from '@/images/marketplaces/bark/logo.svg'
+import logoToptal from '@/images/marketplaces/toptal/logo.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Adoro', logoAdoro],
+  ['Comnoco', logoComnoco],
+  ['Qproco', logoQproco],
+  ['Apukuski', logoApukuski],
+  ['Kronologic', logoKronologic],
+  ['Fino', logoFino],
+  ['Dexecure', logoDexecure],
+  ['Funnelflux', logoFunnelflux],
+]
+
+const marketPlaces = [
+  ['UpWork', '100% Job success on UpWork', logoUpwork],
+  ['Fiverr', '4.9 Rating on Fiverr', logoFiverr],
+  ['Bark', '4.8 Rating on Bark', logoBark],
+  ['Toptal', '4.6 Rating on Toptal', logoToptal],
 ]
 
 function Clients() {
@@ -58,6 +69,42 @@ function Clients() {
         </FadeInStagger>
       </Container>
     </div>
+  )
+}
+
+function MarketPlace() {
+  return (
+    <Container className="mt-24 sm:mt-32 lg:mt-40">
+      <FadeIn>
+        <h2 className="font-display text-2xl font-semibold text-neutral-950">
+          Industry Recognition and Customer Satisfaction
+        </h2>
+        <p>
+          Renowned for industry-leading excellence, as evidenced by prestigious
+          awards and exceptional job success on UpWork and Fiverr Reviews.
+        </p>
+      </FadeIn>
+      <FadeInStagger className="mt-10" faster>
+        <Border as={FadeIn} />
+        <ul
+          role="list"
+          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
+        >
+          {marketPlaces.map(([client, success, logo]) => (
+            <li key={client} className="group">
+              <FadeIn className="overflow-hidden">
+                <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
+                  <Image src={logo} alt={client} unoptimized />
+                  <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
+                    <span>{success}</span>
+                  </p>
+                </Border>
+              </FadeIn>
+            </li>
+          ))}
+        </ul>
+      </FadeInStagger>
+    </Container>
   )
 }
 
@@ -201,12 +248,13 @@ export default async function Home() {
       </Container>
 
       <Clients />
+      <MarketPlace />
 
       <CaseStudies caseStudies={caseStudies} />
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'NearDeals', logo: logoQproco }}
       >
         The team at HTByte went above and beyond with our onboarding, even
         slashing our costs by 50% and fast-tracking our MVP with their tailored

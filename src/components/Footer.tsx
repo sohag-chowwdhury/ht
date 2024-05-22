@@ -11,7 +11,8 @@ const navigation = [
     links: [
       { title: 'Adoro', href: '/work/adoro' },
       { title: 'Comnoco', href: '/work/comnoco' },
-      { title: 'Phobia', href: '/work/phobia' },
+      { title: 'Apukuski', href: '/work/apukuski' },
+      { title: 'Neardeals', href: '/work/qproco' },
       {
         title: (
           <>
@@ -29,6 +30,7 @@ const navigation = [
       { title: 'Process', href: '/process' },
       { title: 'Blog', href: '/blog' },
       { title: 'Contact us', href: '/contact' },
+      { title: 'Career', href: '/career' },
     ],
   },
   {
