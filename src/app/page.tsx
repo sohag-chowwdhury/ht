@@ -242,7 +242,7 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             At HTByte.com, we blend SaaS, AI, and digital marketing to
-            revolutionize your business, slashing costs by up to 75%.
+            revolutionize your business, slashing costs by up to 80%.
           </p>
         </FadeIn>
       </Container>
