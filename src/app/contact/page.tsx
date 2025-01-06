@@ -1,7 +1,8 @@
 import { useId } from 'react'
 import { type Metadata } from 'next'
 import Link from 'next/link'
-
+import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -15,8 +16,18 @@ function TextInput({
   ...props
 }: React.ComponentPropsWithoutRef<'input'> & { label: string }) {
   let id = useId()
+  const pathname = usePathname()
 
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'pageview',
+        page: pathname,
+      })
+    }
+  }, [pathname])
   return (
+   
     <div className="group relative z-0 transition-all focus-within:z-10">
       <input
         type="text"

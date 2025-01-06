@@ -1,5 +1,7 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
+import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 import { Border } from '@/components/Border'
 import { ContactSection } from '@/components/ContactSection'
@@ -24,6 +26,16 @@ import imageBidhanDas from '@/images/team/bidhan-dash.png'
 import { loadArticles } from '@/lib/mdx'
 
 function Culture() {
+  const pathname = usePathname()
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'pageview',
+        page: pathname,
+      })
+    }
+  }, [pathname])
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro

@@ -1,7 +1,8 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
@@ -17,6 +18,16 @@ export const metadata: Metadata = {
 }
 
 export default async function Blog() {
+  const pathname = usePathname()
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'pageview',
+        page: pathname,
+      })
+    }
+  }, [pathname])
   let jobs = await loadJobs()
 
   return (

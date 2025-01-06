@@ -1,5 +1,6 @@
 import { type Metadata } from 'next'
-
+import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { Blockquote } from '@/components/Blockquote'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -24,7 +25,18 @@ function Section({
   image: React.ComponentPropsWithoutRef<typeof StylizedImage>
   children: React.ReactNode
 }) {
+  const pathname = usePathname()
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.dataLayer) {
+      window.dataLayer.push({
+        event: 'pageview',
+        page: pathname,
+      })
+    }
+  }, [pathname])
   return (
+  
     <Container className="group/section [counter-increment:section]">
       <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 lg:group-even/section:justify-start xl:gap-x-20">
         <div className="flex justify-center">
