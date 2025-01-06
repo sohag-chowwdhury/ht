@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 
 import { RootLayout } from '@/components/RootLayout'
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import '@/styles/tailwind.css'
 
@@ -18,11 +18,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
+      <GoogleTagManager gtmId="GTM-WZV5J89X" />
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
-        <GoogleAnalytics gaId="G-ZN49HC74QE" />
       </body>
-      <GoogleAnalytics gaId="G-ZN49HC74QE" />
+      
     </html>
   )
 }
