@@ -1,8 +1,7 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
+
 import { Blockquote } from '@/components/Blockquote'
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
@@ -27,18 +26,7 @@ function CaseStudies({
 }: {
   caseStudies: Array<MDXEntry<CaseStudy>>
 }) {
-  const pathname = usePathname()
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.dataLayer) {
-      window.dataLayer.push({
-        event: 'pageview',
-        page: pathname,
-      })
-    }
-  }, [pathname])
   return (
-  
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">

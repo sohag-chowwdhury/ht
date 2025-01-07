@@ -1,5 +1,3 @@
-'use client'
-
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -245,7 +243,7 @@ export default async function Home() {
           <p className="mt-6 text-xl text-neutral-600">
             At HTByte.com, we blend SaaS, AI, and digital marketing to
 
-            revolutionize your business, slashing costs by up to 82%.
+            revolutionize your business, slashing costs by up to 81%.
           </p>
         </FadeIn>
       </Container>

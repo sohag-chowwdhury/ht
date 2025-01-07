@@ -1,8 +1,7 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
+
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
@@ -19,18 +18,8 @@ export const metadata: Metadata = {
 
 export default async function Blog() {
   let articles = await loadArticles()
-  const pathname = usePathname()
 
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.dataLayer) {
-      window.dataLayer.push({
-        event: 'pageview',
-        page: pathname,
-      })
-    }
-  }, [pathname])
   return (
-    
     <>
       <PageIntro eyebrow="Blog" title="The latest articles and news">
         <p>Stay Updated with Our Latest Insights and Updates.</p>
