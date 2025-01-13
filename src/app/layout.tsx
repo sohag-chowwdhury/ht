@@ -8,7 +8,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - HTByte',
-    default: 'HTByte - Empowering Your Digital Transformation.',
+    default: 'HTByte - Empowering Your Digital Transformations.',
   },
 }
 
